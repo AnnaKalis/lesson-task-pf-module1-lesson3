@@ -11,7 +11,7 @@ if (firstNumber < secondNumber) {
 var age = 11;
 var minimumAge = "13";
 
-if (age >= minimumAge) {
+if (age >= parseInt(minimumAge)) {
     console.log("Test passed");}
     else {
         console.log("Test failed");}
@@ -21,7 +21,7 @@ if (age >= minimumAge) {
 var income = "11.050";
 var maximumIncome = "13.075";
 
-if (income<= maximumIncome) {console.log("Test passed");}
+if (parseFloat(income)<= parseFloat(maximumIncome)) {console.log("Test passed");}
 else {console.log("Test failed");}
 
 // Question 4
@@ -49,12 +49,15 @@ if (selectedNumber !== parseInt(winningNumber)) {console.log("You lose again");}
 // Question 7
 
 var dayOfTheWeek = 2;
+var dayName;
 
-switch (dayOfTheWeek) { case 1: console.log("Monday"); break;
-    case 2: console.log("Tuesday"); break;
-    case 3: console.log("Wednesday"); break;
-    case 4: console.log("Thursday"); break;
-    case 5: console.log("Friday"); break;
-    case 6: console.log("Saturday"); break;
-    case 7: console.log("Sunday"); break;
-    default: console.log("Invalid day number");}
+switch (dayOfTheWeek) { case 1: dayName="Monday"; break;
+    case 2: dayName="Tuesday"; break;
+    case 3: dayName="Wednesday"; break;
+    case 4: dayName="Thursday"; break;
+    case 5: dayName="Friday"; break;
+    case 6: dayName="Saturday"; break;
+    case 7: dayName="Sunday"; break;
+    default: dayName="Not valid day name";}
+
+    console.log(dayName);
